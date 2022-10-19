@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ChatBot</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='static/css/chat.css'>
+    <link rel="stylesheet" href ="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!--CHAT BAR BLOCK-->
+    <div class="chat-bar-collapsible">
+
+<button id="chat-button" type="button" class="collapsible">Chat with us
+
+<i id="chat-icon" style="color:#fff;" class="fa fa-fw fa-comments-o"></i>
+
+
+</button>
+
+
+
+    <div class="content">
+
+        <div class="full-chat-block">
+
+    <!---message container-->
+
+
+    <div class="outer-container">
+    <div class="chat-container">
+
+        <!--messages-->
+
+        <div id="chatbox">
+            <h5 id="chat-timestamp"></h5>
+            <p id="botStarterMessage" class="botText"><span>loading....</span></p>
+
+                <!--user input box-->
+                <div class="chat-bar-input-block">
+                    <div id="user input">
+                        <input id="textInput" class="input-box" type="text" name="msg"
+                        placeholder="tap enter to send a message">
+                        <p></p>
+                        <div class="chat-bar-icons">
+                            <i id="chat-icon" style="color:crimson;" class="fa fa-fw fa-heart-o"onclick="heartButton()"></i>
+                            <i id="chat-icon" style="color:cornflowerblue;" class="fa fa-fw fa-send-o"onclick="sendButton()"></i>
+
+                            <div class="chat-bar-button">
+                                <p></p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    
+
+
+
+                </div>
+
+
+
+        </div>
+
+
+    </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+    </div>
+    
+</body>
+<script src="static/scripts/response.js"></script>
+    <script src="static/scripts/chat.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</html>
